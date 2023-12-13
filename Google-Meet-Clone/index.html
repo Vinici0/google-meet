@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7433d3320f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <title>Google Meet Clone</title>
+</head>
+
+<body>
+    <!-- header section  -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-row md:flex-row items-center">
+            <a href="#" class="flex w-40">
+                <img src="./images/logo.svg" alt="logo" class="cursor-pointer">
+            </a>
+            <nav aria-label="enlaces de navegación"
+                class="md:ml-auto md:mr-auto md:flex md:flex-wrap md:items-center md:text-base md:justify-center hidden">
+    
+                <a href="https://workspace.google.com/intl/en_in/?utm_source=google&utm_medium=cpc&utm_campaign=1011352-Workspace-APAC-IN-en-BKWS-EXA-HV&utm_content=text-ad-none-none-DEV_c-CRE_608344336739-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+G+Suite_1-KWID_43700071931903936-kwd-35154496839&userloc_9302611-network_g&utm_term=KW_google%20suits&gclid=Cj0KCQjw94WZBhDtARIsAKxWG--hDQkZ4ujQiyJjaOAGwqlzkbz8arPgJzMwgXBnBm0dbhqm3r1FIqQaAoLQEALw_wcB&gclsrc=aw.ds"
+                    class="mr-10 cursor-pointer hover:text-gray-900">Soluciones</a>
+    
+                <a href="https://workspace.google.com/intl/en_in/pricing.html" target="_blank"
+                    class="mr-10 cursor-pointer hover:text-gray-900">Planes y precios</a>
+    
+                <a href="https://workspace.google.com/intl/en_in/contact-form/?source=gafb-pricing-enterprise-en-IN"
+                    target="_blank" class="mr-10 cursor-pointer hover:text-gray-900">Contactar a ventas</a>
+    
+                <a href="https://workspace.google.com/intl/en_in/training/"
+                    class="mr-10 cursor-pointer hover:text-gray-900">Recursos</a>
+            </nav>
+            <button type="button" id="header_join_btn"
+                class="md:inline-flex md:items-center md:bg-white md:text-blue-600 md:border md:border-gray-300 md:py-2 md:px-4 md:mx-2 md:focus:outline-none md:hover:bg-white md:hover:border md:hover:border-blue-600 md:rounded md:text-base md:mt-4 md:mt-0 hidden">Unirse
+                a una reunión</button>
+            <button type="button"
+                class="md:inline-flex md:items-center md:bg-blue-600 md:text-white md:border-0 md:py-2 md:px-4 md:focus:outline-none md:hover:bg-blue-800 md:rounded md:text-base md:mt-4 md:mt-0 hidden">Iniciar
+                una reunión</button>
+        </div>
+    </header>
+    
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex md:px-16 px-5 md:py-24 py-12 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 md:pr-24 md:pr-16 flex flex-col md:items-start text-left mb-16 md:mb-0 items-center text-center premium_meeting">
+                <h1 class="md:title-font md:text-4xl text-2xl mb-10 font-medium text-gray-900 w-3/4 home-text">
+                    Reuniones de video premium para todos.
+                </h1>
+                <p class="mb-8 leading-relaxed w-[90%] md:text-lg text-normal text-gray-600 font-normal">
+                    Hemos rediseñado el servicio que creamos para reuniones de negocios seguras y de alta calidad, Google Meet, para que esté disponible para todos, en cualquier dispositivo.
+                </p>
+                <div class="flex md:flex-row md:justify-center items-center flex-col start_meeting">
+                    <button type="button"
+                        class="md:inline-flex text-white bg-blue-600 border-0 py-2 px-6 md:mb-0 mb-4 focus:outline-none             hover:bg-blue-800 rounded text-lg flex justify-center">
+                        <i class="fa-solid fa-video pr-2 py-1.5"></i>
+                        Iniciar reunión
+                    </button>
+    
+                    <input type="text" id="join_meeting_input"
+                        class="md:ml-2 pl-5 inline-flex font-normal placeholder:text-gray-500 bg-white border border-gray-300 py-2 px-2 outline-gray-500 rounded text-lg relative"
+                        placeholder="Ingresa un código de reunión">
+    
+                    <p class="md:ml-4 mt-2.5 text-gray-500 font-semibold cursor-pointer text-[17px]">Unirse</p>
+                </div>
+    
+                <a href="https://support.google.com/accounts/answer/27441?hl=en" class="mt-10 font-medium">
+                    ¿No tienes una cuenta?
+                    <span class="text-blue-500 cursor-pointer">Comienza ahora</span>
+                </a>
+            </div>
+            <div class="md:max-w-lg md:w-full md:w-1/2 w-5/6 first-image-parent">
+                <img src="./images/image1.webp" alt="imagen principal" id="first-image"
+                    class="object-cover object-center rounded">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- footer  -->
+    <footer class="text-gray-600 body-font bg-gray-200">
+        <div class="container md:px-5 py-8 pt-10 mx-auto flex items-center justify-center md:flex-row flex-col">
+            <a href="#" class="flex w-40">
+                <img src="./images/logo.svg" alt="footer logo" class="cursor-pointer">
+            </a>
+            <nav class="md:mx-10 md:mt-0.5 mx-10 mt-4 flex flex-wrap items-center text-base justify-center"
+                aria-label="footer elements">
+
+                <a href="https://about.google/"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">About
+                    Google</a>
+
+                <a href="https://about.google/products/"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">Google
+                    Products</a>
+
+                <a href="https://policies.google.com/privacy?hl=en" target="_blank"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">Privacy</a>
+
+                <a href="https://policies.google.com/terms?hl=en" target="_blank"
+                    class="md:mr-5 mr-3 text-gray-500 font-medium cursor-pointer hover:text-gray-600">Terms</a>
+
+            </nav>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
